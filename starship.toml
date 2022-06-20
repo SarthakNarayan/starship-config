@@ -54,3 +54,15 @@ format = "[$localipv4]($style) "
 error_symbol = "[✖](bold red) "
 # success_symbol = "[▶](bold green)"
 
+[git_status]
+format = "[$all_status$ahead_behind]($style)"
+ahead = "⇡ $count "
+behind = "⇣ $count "
+deleted = "🗑 $count "
+diverged = " $count "
+stashed = "📦 $count "
+modified = "פֿ $count "
+staged = '[ $count ](green)'
+renamed = " $count "
+untracked = "🤷 ‍$count "
+style = "bold red"
