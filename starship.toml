@@ -1,0 +1,56 @@
+# https://starship.rs/config/#prompt
+
+[aws]
+symbol = "  "
+disabled = true
+
+[c]
+symbol = " "
+
+[directory]
+read_only = " "
+truncate_to_repo = false
+truncation_length = 7
+
+[docker_context]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[localip]
+ssh_only = true
+disabled = false
+format = "[$localipv4]($style) "
+
+[character]
+error_symbol = "[✖](bold red) "
+# success_symbol = "[▶](bold green)"
+
