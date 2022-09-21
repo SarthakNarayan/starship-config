@@ -66,3 +66,12 @@ staged = '[ $count ](green)'
 renamed = " $count "
 untracked = "🤷 ‍$count "
 style = "bold red"
+
+# [kubernetes]
+# disabled = false
+# format = 'on [⛵ ($cluster in )$context \($namespace\)](dimmed green) '
+
+[gcloud]
+format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
+disabled = true
+
