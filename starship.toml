@@ -67,11 +67,16 @@ renamed = " $count "
 untracked = "🤷 ‍$count "
 style = "bold red"
 
-# [kubernetes]
-# disabled = false
+# Displays the current Kubernetes context (opens new window)name and, **if set**, the namespace, user and cluster from the kubeconfig file. 
+# The namespace needs to be set in the kubeconfig file, this can be done via kubectl config set-context starship-context --namespace astronaut. Similarly the user and cluster can be set with kubectl config set-context starship-context --user starship-user and kubectl config set-context starship-context --cluster starship-cluster.
+[kubernetes]
+disabled = false
+detect_files = ['k8s']
 # format = 'on [⛵ ($cluster in )$context \($namespace\)](dimmed green) '
+format = 'on [☸ ($cluster) - \($namespace\)](dimmed green) '
 
 [gcloud]
 format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
 disabled = true
-
+# Active from command line
+# /opt/homebrew/opt/starship/bin/starship config gcloud.disabled false
